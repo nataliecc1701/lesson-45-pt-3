@@ -9,11 +9,7 @@ function curriedAdd(addend = null) {
         return total;
     }
     
-    if (addend !== null) {
-        total = total + addend;
-        return curryingFunct;
-    }
-    return total;
+    return curryingFunct(addend)
 }
 
 module.exports = { curriedAdd };
